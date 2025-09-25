@@ -58,4 +58,4 @@ This project includes:
 
 ## License
 
-This project is licensed to you. Add your specific license or terms here.
+Refer [here](./LICENSE)
