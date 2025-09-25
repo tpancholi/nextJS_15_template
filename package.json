@@ -1,27 +1,53 @@
 {
-  "name": "nextjs-code-evolution",
+  "name": "nextjs15-starter-code",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
+  "description": "Next.js 15 starter code with ESLint, Prettier, TailwindCSS, pre-commit hook and Turbopack",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build --turbopack",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:fix": "eslint --fix",
+    "format": "prettier src/ --write",
+    "prepare": "husky"
   },
   "dependencies": {
+    "next": "15.5.4",
     "react": "19.1.0",
-    "react-dom": "19.1.0",
-    "next": "15.5.4"
+    "react-dom": "19.1.0"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@next/eslint-plugin-next": "^15.5.4",
+    "@tailwindcss/postcss": "^4",
+    "@trivago/prettier-plugin-sort-imports": "^5.2.2",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
     "eslint": "^9",
     "eslint-config-next": "15.5.4",
-    "@eslint/eslintrc": "^3"
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-check-file": "^3.3.0",
+    "eslint-plugin-import": "^2.32.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-security": "^3.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.0",
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.6.14",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "typescript-eslint": "^8.44.1"
+  },
+  "lint-staged": {
+    "**/*.{js,jsx,ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "**/*.{json,css,html}": [
+      "prettier --write"
+    ]
   }
 }

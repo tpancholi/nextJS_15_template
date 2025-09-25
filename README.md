@@ -1,36 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js Code Evolution
+
+A Next.js project set up for evolving code patterns, structure exploration, and rapid front-end development. Built with Next.js 15, React 19, and modern tooling including TypeScript, Tailwind CSS, Prettier, ESLint, and Husky.
+
+## Project Structure
+
+```
+src/
+  app/
+    favicon.ico      # App icon
+    globals.css      # Global styles (typically TailwindCSS)
+    layout.tsx       # Root layout
+    page.tsx         # Main landing page
+public/
+  *.svg              # Static assets
+```
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies (suggested: pnpm):
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Start development server:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-## Learn More
+## Available Scripts
 
-To learn more about Next.js, take a look at the following resources:
+- `pnpm dev`     – Start Next.js in development mode (using Turbopack)
+- `pnpm build`   – Build app for production (with Turbopack)
+- `pnpm start`   – Start production server
+- `pnpm lint`    – Lint all files
+- `pnpm lint:fix`– Lint and fix issues
+- `pnpm format`  – Run Prettier formatting on `src/`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Tooling
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+This project includes:
+- **TypeScript** for static typing
+- **Tailwind CSS** for utility-first styling
+- **Prettier** and plugins for code formatting
+- **ESLint** and plugins for linting JS/TS/React/Accessibility/Security
+- **Husky** and **lint-staged** for pre-commit enforcement
 
-## Deploy on Vercel
+## Customization & Extensions
+- Edit `src/app/page.tsx` to change the main page.
+- Add your own components/pages under `src/app/`.
+- Place static files/assets in `public/`.
+- Adjust styles in `src/app/globals.css`.
+- Environment-specific configuration can go in `.env.local`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## License
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This project is licensed to you. Add your specific license or terms here.
