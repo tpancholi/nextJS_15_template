@@ -5,7 +5,7 @@
   "trailingComma": "es5",
   "bracketSpacing": true,
   "printWidth": 80,
-  "endOfLine": "auto",
+  "endOfLine": "lf",
   "arrowParens": "always",
   "importOrder": [
     "^(react|next?/?([a-zA-Z/]*))$",
