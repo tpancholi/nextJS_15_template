@@ -38,7 +38,8 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 - `pnpm start`   – Start production server
 - `pnpm lint`    – Lint all files
 - `pnpm lint:fix`– Lint and fix issues
-- `pnpm format`  – Run Prettier formatting on `src/`
+- `pnpm format`  – Formats all supported files in the project
+- `pnpm format:check` – Checks for formatting issues without changing files, exiting with an error if any are found.
 
 ## Tooling
 
